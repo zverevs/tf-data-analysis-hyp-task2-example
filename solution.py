@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 from hyppo.ksample import MMD
+from scipy.stats import laplace, norm, ks_2samp, anderson_ksamp, cramervonmises_2samp
 
 chat_id = 235789175 # Ваш chat ID, не меняйте название переменной
 
