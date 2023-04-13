@@ -8,7 +8,7 @@ def solution(x: np.array, y: np.array) -> bool:
     # Измените код этой функции
     # Это будет вашим решением
     # Не меняйте название функции и её аргументы
-    pval = MMD(compute_kernel="rbf", gamma=1).test(x, y)[1]
+    pval = cramervonmises_2samp(x, y).pvalue
     alpha = 0.08 
     
     if pval < alpha:
